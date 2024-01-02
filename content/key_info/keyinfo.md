@@ -26,6 +26,6 @@ ShowBreadCrumbs: false
 
 > 👮 **Mods**: Mods can handle tasks like banning players and removing teams.
 
-> 🆘 **Help Server**: [We have a help server if you have any questions!]("https://discord.gg/aMYQ3z22uA")
+> 🆘 **Help Server**: [We have a help server if you have any questions!](https://discord.gg/aMYQ3z22uA)
 
 [Click here to invite LadderBot to your server!](https://discord.com/api/oauth2/authorize?client_id=1166023850962718741&permissions=268528656&scope=bot+applications.commands)
