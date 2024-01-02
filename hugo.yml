@@ -2,9 +2,10 @@
 # contain http (as opposeed to https) URLs. This would affect Google indexing of your URLs.
 baseURL: "https://ladderbot.github.io"
 title: "LadderBot"
-Author: "LadderBot"
+Author: LadderBot
 paginate: 5
 theme: [PaperMod]
+description: "LadderBot - Automate ladder tournaments in Discord"
 
 enableInlineShortcodes: true
 enableRobotsTXT: true
@@ -59,7 +60,7 @@ params:
   ShowPageNums: true
   ShowToc: true
   # comments: false
-  images: ["/logo"]
+  images: ["/ladderfight.png"]
 
   homeInfoParams:
     Title: "# 🪜Ladder Bot\n## Automate ladder tournaments in Discord"
