@@ -2,13 +2,14 @@
 author: LadderBot
 title: "Getting Started"
 date: "2023-04-11"
-description: "Setting up LadderBot and Running your first tournament"
 weight: 1
 ShowReadingTime: false
 ShowBreadCrumbs: false
 ---
 
 This article goes over setting up LadderBot and running your first tournament.
+
+<!--more-->
 
 ---
 

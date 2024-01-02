@@ -2,7 +2,6 @@
 # contain http (as opposeed to https) URLs. This would affect Google indexing of your URLs.
 baseURL: "http://example.org/"
 title: LadderBot
-logo: "static/logo.jpg" # Add your logo path here
 Author: "LadderBot"
 paginate: 5
 theme: [PaperMod]
@@ -66,6 +65,7 @@ params:
   homeInfoParams:
     Title: "# 🪜Ladder Bot\n## Automate ladder tournaments in Discord"
     KeyInfoPagePath: "key_info/keyinfo.md"
+    images: ["/rankings.png", "/teams.png", "/channels.png", "/match.png"]
 
     Content: >
       Ladder Bot makes doing tournaments easy for both organizers and participants by automating the bookkeeping and organizational details required for ladder tournaments.
@@ -78,7 +78,7 @@ params:
 
   label:
     icon: "/logo.png"
-    iconHeight: 50 # Adjust the height as needed
+    iconHeight: 50
 
   analytics:
     google:

@@ -16,9 +16,23 @@
     <div class="post-content">
         {{ $keyInfoPage.Content | markdownify }}
     </div>
-    <footer class="entry-footer">
-        {{ partial "social_icons.html" . }}
-    </footer>
+    <br>
+
+
+    <div class="image-grid">
+        {{ range .images }}
+        <div class="grid-item">
+            <img src="{{ . }}" alt="Image description">
+        </div>
+        {{ end }}
+    </div>
+
+    <br>
+    <br>
+
+
+
+
 </article>
 {{ end }}
 {{- end }}
