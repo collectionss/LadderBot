@@ -1,7 +1,7 @@
 # If your site is in 'https', then make sure your base url isn't written using 'http' otherwise your sitemap would
 # contain http (as opposeed to https) URLs. This would affect Google indexing of your URLs.
-baseURL: "http://example.org/"
-title: LadderBot
+baseURL: "https://ladderbot.github.io"
+title: "LadderBot"
 Author: "LadderBot"
 paginate: 5
 theme: [PaperMod]
@@ -42,7 +42,7 @@ outputs:
 
 params:
   env: production # to enable google analytics, opengraph, twitter-cards and schema.
-  description: "Theme PaperMod - https://github.com/adityatelange/hugo-PaperMod"
+  description: "LadderBot - https://ladderbot.github.io"
   author: Theme PaperMod
   # author: ["Me", "You"] # multiple authors
 
@@ -60,7 +60,7 @@ params:
   ShowPageNums: true
   ShowToc: true
   # comments: false
-  images: ["images/papermod-cover.png"]
+  images: ["/logo"]
 
   homeInfoParams:
     Title: "# 🪜Ladder Bot\n## Automate ladder tournaments in Discord"
@@ -79,10 +79,6 @@ params:
   label:
     icon: "/logo.png"
     iconHeight: 50
-
-  analytics:
-    google:
-      SiteVerificationTag: "XYZabc"
 
   assets:
     disableHLJS: true
