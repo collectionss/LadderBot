@@ -59,7 +59,7 @@ Remember that commands will only work in the channels created by `/new_ladder`.
 
 Now is the time for admins/server mods to distribute the roles created by LadderBot. Ban the players you don't want participating and assign the `TournamentMod` role to your trusted mods.
 
-When you're ready for teams to sign up, use `toggle_signup` to let registrations!
+When you're ready for teams to sign up, use `/toggle_signup` to let registrations!
 
 ---
 

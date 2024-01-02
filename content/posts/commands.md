@@ -31,6 +31,7 @@ List of all commands and roles.
 
 - `/new_ladder`: Creates a new ladder tournament.
 - `/toggle_signup`: Open or close tournament signups.
+- `/toggle_team_edits`: Allow or not teams to make changes to their name or roster.
 - `/edit_tournament`: Modify tournament details, like .
 - `/start`: Officially start the tournament.
 - `/end`: Officially end the tournament. (Caution!)
