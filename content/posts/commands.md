@@ -37,6 +37,8 @@ List of all commands and roles.
 - `/end`: Officially end the tournament. (Caution!)
 - `/clean`: Clean up tournament-related channels and data. (Caution!)
 - `/create_roles`: Re-makes the roles needed for tournaments.
+- `/warn_inactive`: Warns team captains who havent played a match in 4 weeks.
+- `/prune_inactive`: Removes teams that havent played a match in 4 weeks.
 
 ### Roles
 
