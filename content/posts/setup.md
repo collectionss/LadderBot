@@ -61,6 +61,7 @@ Now is the time for admins/server mods to distribute the roles created by Ladder
 
 When you're ready for teams to sign up, use `/toggle_signup` to let registrations!
 If you want teams to be able to do things like edit their name or change their roster, use `/toggle_team_edits`!
+
 ---
 
 ### Starting
