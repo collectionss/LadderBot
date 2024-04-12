@@ -15,7 +15,7 @@ This article goes over setting up LadderBot and running your first tournament.
 
 ### Permissions Needed to Work
 
-![Description of Image](/static/botPerms.png)
+![Description of Image](/LadderBot.github.io/botPerms.png)
 
 If you're comfortable with the bot having these permissions, you can add it to your server!
 
@@ -47,7 +47,7 @@ You can also add any additional information you want players to know.
 
 Afterward, a category with the tournament's name will be created along with a list of channels. A message will be posted in the info channel, explaining general info and rules, as well as any additional information the creator added.
 
-![Description of Image](/static/channels.png)
+![Description of Image](/LadderBot.github.io/channels.png)
 
 ---
 
