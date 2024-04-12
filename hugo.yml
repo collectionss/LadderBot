@@ -60,12 +60,12 @@ params:
   ShowPageNums: true
   ShowToc: true
   # comments: false
-  images: ["/ladderfight.png"]
+  images: ["/LadderBot.github.io/ladderfight.png"]
 
   homeInfoParams:
     Title: "# 🪜Ladder Bot\n## Automate ladder tournaments in Discord"
     KeyInfoPagePath: "key_info/keyinfo.md"
-    images: ["/rankings.png", "/teams.png", "/channels.png", "/match.png"]
+    images: ["/LadderBot.github.io/rankings.png", "/LadderBot.github.io/teams.png", "/LadderBot.github.io/channels.png", "/LadderBot.github.io/match.png"]
 
     Content: >
       Ladder Bot makes doing tournaments easy for both organizers and participants by automating the bookkeeping and organizational details required for ladder tournaments.
@@ -77,7 +77,7 @@ params:
       url: "https://discord.gg/aMYQ3z22uA"
 
   label:
-    icon: "/logo.png"
+    icon: "/LadderBot.github.io/logo.png"
     iconHeight: 50
 
   assets:
