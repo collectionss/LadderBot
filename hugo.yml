@@ -60,7 +60,7 @@ params:
   ShowPageNums: true
   ShowToc: true
   # comments: false
-  images: ["/ladderfight.png"]
+  images: ["/static/ladderfight.png"]
 
   homeInfoParams:
     Title: "# 🪜Ladder Bot\n## Automate ladder tournaments in Discord"
