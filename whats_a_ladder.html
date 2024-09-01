@@ -1,0 +1,241 @@
+<!--
+  | Website designed by JstnLT (https://jstnlt.my.id)
+  | This project is open source: https://github.com/JastinXyz/discord-bot-landing-page-web
+-->
+
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>LadderBot</title>
+    <link rel="stylesheet" href="assets/css/bulma.min.css" />
+    <link rel="stylesheet" href="assets/css/style.css" />
+    <link rel="stylesheet" href="https://unpkg.com/aos@2.3.1/dist/aos.css" />
+    <link rel="stylesheet" href="https://unpkg.com/tippy.js@6/animations/scale.css" />
+    
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css"
+      integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+
+    <script src="assets/js/jquery-3.6.0.js"></script>
+  </head>
+  <body>
+    <!-- Back To Top Start -->
+    <a id="backtotop" data-tippy-content="Back To Top.">
+      <i class="fa-solid fa-angle-up has-text-white fa-2xl mt-5"></i>
+    </a>
+    <!-- Back To Top End -->
+
+    <!-- Navbar Start -->
+    <nav
+      class="navbar is-fixed-top"
+      role="navigation"
+      aria-label="main navigation"
+    >
+      <div class="navbar-brand mt-2 mb-2">
+        <a class="navbar-item" href="#">
+          <strong>LadderBot V2</strong>
+
+          <!-- or if you want to use image -->
+          <!-- <img
+            src="image link or path"
+            width="112"
+            height="28"
+          /> -->
+        </a>
+
+        <a
+          role="button"
+          class="navbar-burger has-text-white"
+          data-target="navMenu"
+          aria-label="menu"
+          aria-expanded="false"
+        >
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+          <span aria-hidden="true"></span>
+        </a>
+      </div>
+
+      <div id="navbarBasicExample" class="navbar-menu">
+        <div class="navbar-start">
+          <a href="index.html" class="navbar-item is-tab">
+            Home
+          </a>
+
+          <a href="Tutorial.html" class="navbar-item is-tab">
+            Tutorial
+          </a>
+
+          <a href="Commands.html" class="navbar-item is-tab">
+            Commands
+          </a>
+        </div>
+
+        <div class="navbar-end">
+          <a href="#" class="navbar-item is-tab" target="_blank">
+            <i class="fa-brands fa-discord"></i>
+          </a>
+
+          <a href="#" class="navbar-item is-tab" target="_blank">
+            <i class="fa-brands fa-github"></i>
+          </a>
+
+          <div class="navbar-item">
+            <div class="buttons">
+              <a href="#" class="button is-blurple">
+                <strong
+                  ><i class="fa-solid fa-right-to-bracket mr-2"></i>
+                  Add To Discord</strong
+                >
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- Navbar End -->
+
+    <!-- Hero Section Start -->
+    <section class="hero bg-base">
+      <div class="hero-body">
+          <div class="columns">
+            <div class="column mr-6 mt-12" data-aos="fade-up">
+              <p class="title has-text-white ">
+                Whats a Ladder Style Tournament
+              </p>
+
+              <p class="subtitle has-text-grey-light is-size-6 mt-3">
+                A ladder tournament is a fun and competitive way to see how you stack up against others. In a ladder, each player or team starts with a rank. You can challenge anyone above you to a match, and if you win, you move up the ladder by swapping places with them. For example, if you're ranked 5th and beat the 3rd-ranked player, you take their spot, and they move down to 5th. This format lets you improve your rank over time by taking on tougher opponents. It's a great way to track progress and compete regularly!
+              </p>
+
+        
+            
+            </div>
+            
+        </div>
+      </div>
+      
+    </section>
+    <!-- Hero Section End -->
+
+
+    <!-- Features Section Start -->
+    <section id="features" class="section mt-6">
+      <div class="has-text-centered">
+        <h1 class="title lined">Benefits</h1>
+        <div class="line line-center blurple"></div>
+      </div>
+
+      <!-- single feature start (Left) -->
+      <div class="single-feature">
+        <div class="columns mt-6">
+          <div class="column mr-6">
+            
+            
+            <p class="subtitle is-size-6 mt-3">
+              <strong>Simple Setup:</strong> Ladders are easy to set up and manage.<br>
+              <br>
+            
+              <strong>Easy to Manage:</strong> Players challenge each other directly, making ladders mostly self-driven.<br>
+              <br>
+            
+              <strong>Flexible Scheduling:</strong> Unlike regular bracket-style tournaments, teams can challenge opponents whenever they want, leaving scheduling up to the teams rather than the admins. This relaxed schedule reduces the risk of day-of dropouts and is more flexible for players who can’t always commit to a single match time.<br>
+              <br>
+            
+              <strong>Multiple Chances:</strong> Another benefit of ladder tournaments is that when a team loses, they’re not out of the competition. Teams have until the end of the tournament to climb their way back up the ranks!<br>
+              <br>
+            
+              <strong>Long-Term Engagement:</strong> Ladders are typically run over longer periods, often weeks or months, keeping players engaged and invested in the competition. Prizes can be awarded at the end or throughout the tournament to maintain interest.<br>
+              <br>
+            </p>
+          </div>
+          <div class="column" data-aos="fade-left">
+            <img
+              class="image has-image-centered"
+              src="assets/img/logo2.png"
+              alt="feature1 img"
+              style="width: 23rem;"
+            />
+          </div>
+        </div>
+      </div>
+      <!-- single feature end (Left) -->
+
+      
+        </div>
+      </div>
+      <!-- single feature end (Right) -->
+    </section>
+    <!-- Features Section End -->
+
+    
+    <!-- Invite Section Start -->
+    <section class="section mt-6">
+      <div class="buttons">
+        <a href="#" class="button is-info">
+          <strong>Add To Discord</strong>
+        </a>
+        <a href="#" class="button is-primary">
+          <strong>See It Work </strong>
+        </a>
+
+      
+
+
+        <!-- <a href="#" class="button is-primary is-outlined">
+          <strong><i class="fa-solid fa-crown"></i> Premium</strong>
+        </a> -->
+      </div>
+    </section>
+    <!-- Invite Section End -->
+
+    <!-- Footer Section Start -->
+    <footer class="footer bg-base">
+      <div class="content has-text-centered has-text-white">
+        <div class="mb-2">
+          <a href="#" class="has-text-white" target="_blank">
+            <i class="fa-brands fa-discord"></i>
+          </a>
+          &nbsp; &nbsp;
+          <a href="#" class="has-text-white" target="_blank">
+            <i class="fa-brands fa-github"></i>
+          </a>
+        </div>
+
+        <p>
+          <span class="has-text-weight-bold">LadderBot</span>
+          <br />
+          &copy; <span id="cp-year"></span> Copyright LadderBot. All Rights
+          Reserved.
+        </p>
+
+        <!-- <p style="letter-spacing: 0.1em;" class="is-uppercase">
+          Website Designed By
+          <a
+            href="https://jstnlt.my.id"
+            class="blurple has-text-weight-bold"
+            target="_blank"
+            >JstnLT</a
+          >.<br>The Original Website Design is Open Source on <a
+            href="https://github.com/JastinXyz/discord-bot-landing-page-web"
+            class="blurple has-text-weight-bold"
+            target="_blank"
+            >Github</a
+          >
+        </p> -->
+      </div>
+    </footer>
+    <!-- Footer Section End -->
+
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <script src="https://unpkg.com/@popperjs/core@2"></script>
+    <script src="https://unpkg.com/tippy.js@6"></script>
+    <script src="assets/js/script.js"></script>
+  </body>
+</html>

@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="css/nav.css">
+    <link href="css/commands.css" rel="stylesheet">
+    <link href="css/untitled.css" rel="stylesheet">
+    <link href="css/cursor.css" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="./css/txtformatting.css">
+    <link rel="stylesheet" type="text/css" href="./css/shadow.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css">
+    <script type="module" src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@5.5.2/dist/ionicons/ionicons.js"></script>
+    <title>LadderBot site</title>
+</head>
+
+<body >
+
+<div class="navbar">
+    <div class="container">
+      <div class="navbar-nav">
+        <span class="navbar-toggler" id="toggler"><i onclick="toggleNavbar(this)" class="fas fa-bars"></i></span>
+        <div class="navs" id="navs">
+          <!-- You can change the href value and the text value -->
+          <div class="navs-item notbtn"><a href="index.html" class="txt-uppercase">Back</a></div>
+
+        </div>
+      </div>
+    </div>
+  </div>
+    <div class="container">
+        <div class="mt-4"></div>
+        <div class="row">
+            <div class="col-md-4 my-2">
+                <div class="card p-3">
+                    <button onclick="active(this)" id="CategoryBtnAll" class="text-decoration-none btn btn-primary mt-2 my-1 p-2"><i class="fad fa-icons ttt"></i>&nbsp; All Commands</button>
+                    
+                        <button onclick="active(this)" id="CategoryBtn0" class="text-decoration-none btn btn-primary mt-2 my-1 p-2"><i class='fas fa-gift ttt'></i>&nbsp; Captains Commands</button>
+                    
+                        <button onclick="active(this)" id="CategoryBtn1" class="text-decoration-none btn btn-primary mt-2 my-1 p-2"><i class='fas fa-globe-europe ttt'></i>&nbsp; Moderation Commands</button>
+                    
+                        <button onclick="active(this)" id="CategoryBtn2" class="text-decoration-none btn btn-primary mt-2 my-1 p-2"><i class='fas fa-hammer-war ttt'></i>&nbsp;&nbsp; General Commands</button>
+                    
+                        <button onclick="active(this)" id="CategoryBtn3" class="text-decoration-none btn btn-primary mt-2 my-1 p-2"><i class='fas fas fa-crown ttt'></i>&nbsp;&nbsp; Roles</button>
+                    
+                </div>
+            </div>
+            <div class="col-md-8 my-2">
+                
+                    
+                    
+                        <!-- Captain Commands -->
+                        <div class="commands-section" id="Category0">
+                            <div class="accordion accordion-flush mt-2" id="challenge">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-headingChallenge">
+                                        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#fchallenge">
+                                            /challenge
+                                        </button>
+                                    </h2>
+                                    <div id="fchallenge" class="accordion-collapse collapse" data-bs-parent="#challenge">
+                                        <div class="accordion-body">
+                                            <span class="command-description">Challenges another team of a given rank to a match. Available only to captains.</span><br />
+                                            
+                                            <span class="examples">
+                                                /challenge <span class="param">team_rank</span><br>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion accordion-flush mt-2" id="change_captain">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-headingChangeCaptain">
+                                        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#fchangeCaptain">
+                                            /change_captain
+                                        </button>
+                                    </h2>
+                                    <div id="fchangeCaptain" class="accordion-collapse collapse" data-bs-parent="#change_captain">
+                                        <div class="accordion-body">
+                                            <span class="command-description">Changes the captain of a team.</span><br />
+                                            
+                                            <span class="examples">
+                                                /change_captain <span class="param">@current_captain</span> <span class="param">@new_captain</span><br>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="accordion accordion-flush mt-2" id="invite_player">
+                                <div class="accordion-item">
+                                    <h2 class="accordion-header" id="flush-headingInvitePlayer">
+                                        <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#finvitePlayer">
+                                            /invite_player
+                                        </button>
+                                    </h2>
+                                    <div id="finvitePlayer" class="accordion-collapse collapse" data-bs-parent="#invite_player">
+                                        <div class="accordion-body">
+                                            <span class="command-description">Sends an invitation to a player to join your team.</span><br />
+                                            
+                                            <span class="examples">
+                                                /invite_player <span class="param">@player</span><br>
+                                            </span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        
+
+                <!-- Moderation Commands -->
+                <div class="commands-section" id="Category1">
+                    <div class="accordion accordion-flush mt-2" id="new_ladder">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingNewLadder">
+                                <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#fnewLadder">
+                                    /new_ladder 
+                                </button>
+                            </h2>
+                            <div id="fnewLadder" class="accordion-collapse collapse" data-bs-parent="#new_ladder">
+                                <div class="accordion-body">
+                                    <span class="command-description">Creates a new ladder tournament.</span><br />
+                                    
+                                    <span class="examples">
+                                        /new_ladder <span class="param">team_sizes</span> <span class="param">signup_limit</span> <span class="param">challenge_distance</span>  
+  <br>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion accordion-flush mt-2" id="kick_player_from_tournament">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingKickPlayer">
+                                <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#fkickPlayer">
+                                    /kick_player_from_tournament
+                                </button>
+                            </h2>
+                            <div id="fkickPlayer" class="accordion-collapse collapse" data-bs-parent="#kick_player_from_tournament">
+                                <div class="accordion-body">
+                                    <span class="command-description">Removes player from tournament (captains exempt).</span><br />
+                                    
+                                    <span class="examples">
+                                        /kick_player_from_tournament <span class="param">@member</span> <span class="param">discord_id</span>  
+<br>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion accordion-flush mt-2" id="view_tournament">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingViewTournament">
+                                <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#fviewTournament">
+                                    /view_tournament
+                                </button>
+                            </h2>
+                            <div id="fviewTournament" class="accordion-collapse collapse" data-bs-parent="#view_tournament">
+                                <div class="accordion-body">
+                                    <span class="command-description">View details about the current tournament.</span><br />
+                                    
+                                    <span class="examples">
+                                        /view_tournament<br>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion accordion-flush mt-2" id="set_pause">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingSetPause">
+                                <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#fsetPause">
+                                    /set_pause
+                                </button>
+                            </h2>
+                            <div id="fsetPause" class="accordion-collapse collapse" data-bs-parent="#set_pause">
+                                <div class="accordion-body">
+                                    <span class="command-description">Pauses or resumes the tournament.</span><br />
+                                    
+                                    <span class="examples">
+                                        /set_pause <span class="param">pause</span><br>
+                                        /set_pause <span class="param">resume</span><br> 
+
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion accordion-flush mt-2" id="set_registration_status">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingSetRegistrationStatus">
+                                <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#fsetRegistrationStatus">
+                                    /set_registration_status
+                                </button>
+                            </h2>
+                            <div id="fsetRegistrationStatus" class="accordion-collapse collapse" data-bs-parent="#set_registration_status">
+                                <div class="accordion-body">
+                                    <span class="command-description">Open or close tournament registrations.</span><br />
+                                    
+                                    <span class="examples">
+                                        /set_registration_status <span class="param">open</span><br>
+                                        /set_registration_status <span class="param">close</span><br>
+
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion accordion-flush mt-2" id="end_tournament">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingEndTournament">
+                                <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#fendTournament">
+                                    /end_tournament
+                                </button>
+                            </h2>
+                            <div id="fendTournament" class="accordion-collapse collapse" data-bs-parent="#end_tournament">
+                                <div class="accordion-body">
+                                    <span class="command-description">Ends the tournament.</span><br />
+                                    
+                                    <span class="examples">
+                                        /end_tournament<br>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion accordion-flush mt-2" id="clean">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingClean">
+                                <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#fclean">
+                                    /clean
+                                </button>
+                            </h2>
+                            <div id="fclean" class="accordion-collapse collapse" data-bs-parent="#clean">
+                                <div class="accordion-body">
+                                    <span class="command-description">Removes tournament channels.</span><br />
+                                    
+                                    <span class="examples">
+                                        /clean<br>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion accordion-flush mt-2" id="delete_team">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingDeleteTeam">
+                                <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#fdeleteTeam">
+                                    /delete_team
+                                </button>
+                            </h2>
+                            <div id="fdeleteTeam" class="accordion-collapse collapse" data-bs-parent="#delete_team">
+                                <div class="accordion-body">
+                                    <span class="command-description">Deletes a team.</span><br />
+                                    
+                                    <span class="examples">
+                                        /delete_team <span class="param">@captain</span>  
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+
+                <!-- General Commands -->
+                <div class="commands-section" id="Category2">
+                    <div class="accordion accordion-flush mt-2" id="signup">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingSignup">
+                                <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#fsignup">
+                                    /signup
+                                </button>
+                            </h2>
+                            <div id="fsignup" class="accordion-collapse collapse" data-bs-parent="#signup">
+                                <div class="accordion-body">
+                                    <span class="command-description">Create a new team for the tournament.</span><br />
+                                    
+                                    <span class="examples">
+
+                                        /signup <span class="param">team_name</span>  <br>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion accordion-flush mt-2" id="view_team_by_rank">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingViewTeamByRank">
+                                <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#fviewTeamByRank">
+                                    /view_team_by_rank
+                                </button>
+                            </h2>
+                            <div id="fviewTeamByRank" class="accordion-collapse collapse" data-bs-parent="#view_team_by_rank">
+                                <div class="accordion-body">
+                                    <span class="command-description">Get details about a specific team.</span><br />
+                                    
+                                    <span class="examples">
+                                        /view_team_by_rank <span class="param">rank</span>  <br>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="accordion accordion-flush mt-2" id="help">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingHelp">
+                                <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#fhelp">
+                                    /help
+                                </button>
+                            </h2>
+                            <div id="fhelp" class="accordion-collapse collapse" data-bs-parent="#help">
+                                <div class="accordion-body">
+                                    <span class="command-description">List all available commands.</span><br />
+                                    
+                                    <span class="examples">
+                                        /help<br>
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+
+                <div class="commands-section" id="Category3">
+                    <!-- Existing Roles Commands -->
+                    <div class="accordion accordion-flush mt-2" id="reactionrole">
+                        <div class="accordion-item">
+                            <h2 class="accordion-header" id="flush-headingReactionRole">
+                                <button class="accordion-button collapsed" data-bs-toggle="collapse" data-bs-target="#freactionrole">
+                                    Roles&nbsp; <span class="command-descreption"></span>
+                                </button>
+                            </h2>
+                            <div id="freactionrole" class="accordion-collapse collapse" data-bs-parent="#reactionrole">
+                                <div class="accordion-body">
+                                    
+                                    <span class="examples" style="color:rgb(196, 215, 215)" >
+                                        
+                                            @ladder_organizer<br>
+                                            @ladder_mod<br>
+                                            @ladder_captain<br>
+                                            @ladder_teammate<br>
+                                            @ladder_spectator<br>
+                
+                                    </span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                
+            </div>
+        </div>
+    </div>
+
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <script src="/fontawesome/all.min.js"></script>
+    <script src="/js/animation.js"></script>
+    <script>
+        function active(elm){
+            document.getElementById("CategoryBtnAll").classList.remove("active");
+            
+                document.getElementById("CategoryBtn0").classList.remove("active");
+                document.getElementById("Category0").setAttribute("hidden", "");
+            
+                document.getElementById("CategoryBtn1").classList.remove("active");
+                document.getElementById("Category1").setAttribute("hidden", "");
+            
+                document.getElementById("CategoryBtn2").classList.remove("active");
+                document.getElementById("Category2").setAttribute("hidden", "");
+            
+                document.getElementById("CategoryBtn3").classList.remove("active");
+                document.getElementById("Category3").setAttribute("hidden", "");
+            
+            elm.classList.add("active");
+            if(elm.id.replace("CategoryBtn", "") == "All"){
+                
+                    document.getElementById("Category0").removeAttribute("hidden");
+                
+                    document.getElementById("Category1").removeAttribute("hidden");
+                
+                    document.getElementById("Category2").removeAttribute("hidden");
+                
+                    document.getElementById("Category3").removeAttribute("hidden");
+                
+            }else{
+                document.getElementById("Category" + elm.id.replace("CategoryBtn", "")).removeAttribute("hidden");
+            }
+        }
+        document.getElementById("CategoryBtnAll").click();
+        
+        function search(arg){
+            let commands = JSON.parse(document.getElementById("commands").value);
+            let cmds = [];
+            commands.forEach(category => {
+                category.commands.forEach(command => {
+                    cmds.push(command);
+                })
+            })
+            let existedCmds = cmds.filter(obj => obj.includes(arg.toLowerCase()));
+            cmds.forEach(cmd => {
+                document.getElementById(cmd).setAttribute("hidden", "");
+            })
+            existedCmds.forEach(cmd => {
+                document.getElementById(cmd).removeAttribute("hidden");
+            })
+        }
+    </script>
+    <script type="text/javascript" src="./js/script.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/cursor.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+</body>
+
+</html>
